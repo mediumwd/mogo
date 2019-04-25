@@ -71,24 +71,29 @@
           height: 32px;
         }
     }
-      span.arrow-down{
-        display: inline-block;
-        height: 10px;
-        width: 10px;
-        border-top: 2px solid #cccccc;
-        border-right: 2px solid #cccccc;
-        margin-left:auto;
-        transform: rotate(135deg);
-      }
-      span.arrow-up {
-        display: inline-block;
-        height: 10px;
-        width: 10px;
-        border-top: 2px solid #cccccc;
-        border-right: 2px solid #cccccc;
-        margin-left:auto;
-        transform: rotate(-45deg);
-      }
   }
+  }
+}
+.service__accordion__items__item__main {
+  &.collapsed{
+    .arrow{
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+      border-top: 2px solid #cccccc;
+      border-right: 2px solid #cccccc;
+      margin-left:auto;
+      transform: rotate(135deg);
+    }
+  }
+
+  .arrow{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-top: 2px solid #cccccc;
+    border-right: 2px solid #cccccc;
+    margin-left:auto;
+    transform: rotate(-45deg);
   }
 }
