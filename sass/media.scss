@@ -1,0 +1,71 @@
+@media screen and (max-width: 1200px){
+  .team__items__item__img {
+    width: 300px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .team__items__item__img {
+    width: 200px;
+    height: 280px;
+  }
+  .service__accordion__img {
+    min-width: 300px;
+  }
+  .banner__slider__header-text {
+    @include font('Kaushan Script', 50px, 400, 10px, #fff);
+  }
+  .banner__slider__text {
+    @include font('Montserrat', 100px, 700, 140px, #fff);
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__items__item__img {
+    width: 170px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .banner__slider__header-text {
+    @include font('Kaushan Script', 20px, 400, 10px, #fff);
+  }
+  .banner__slider__text {
+    @include font('Montserrat', 40px, 700, 50px, #fff);
+  }
+  .banner .header .nav {
+    display: none;
+    position: absolute;
+    top: 95px;
+    right: 34px;
+    text-align: right;
+    background-color: #000;
+    z-index: 10;
+    opacity: 0.7;
+    ul{
+      display: flex;
+      flex-direction: column;
+      li {
+        margin: 5px;
+        font-size: 10px;
+      }
+    }
+
+  }
+  .nav-min {
+    display: block;
+    position: absolute;
+    right: 20px;
+    background-color: #000;
+    z-index: 10;
+    opacity: 0.3;
+  }
+  .service__accordion {
+    flex-direction: column;
+    height: 100%;
+    &__items {
+      margin-left: 0;
+      margin-top: 10px;
+
+    }
+  }
+}

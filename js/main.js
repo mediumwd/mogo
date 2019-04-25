@@ -8,7 +8,8 @@ $( document ).ready(function() {
             $(".service__accordion__items").find("span").addClass("arrow-down").removeClass("arrow-up");
         }
     });
-    $('#Carousel').carousel({
-        interval: 5000
+    $(".nav-min").click(function() {
+        $(".nav").toggle();
+        console.log("toggle")
     })
 });
