@@ -1,0 +1,84 @@
+.service {
+  &__accordion {
+    &__items {
+      margin-left: 20px;
+      width: 100%;
+      &__item {
+        &__main {
+          @include font('Montserrat', 14px, 400, 1, #333333);
+          text-transform: uppercase;
+          padding: 20px;
+          border: 1px solid #e5e5e5;
+          p {
+            display: inline-block;
+            margin: 0;
+            margin-left: 10px;
+          }
+        }
+        &__info {
+          padding: 0 20px;
+          border-left: 1px solid #e5e5e5;
+          border-right: 1px solid #e5e5e5;
+          textarea{
+            width: 100%;
+            border: 0;
+            resize: none;
+          }
+          textarea::-webkit-scrollbar {
+            width: 4px;
+            background-color: #f5f5f5;
+          }
+          textarea::-webkit-scrollbar-thumb{
+            background-color: #95e1d3;
+            border-radius: 10px;
+          }
+        }
+        &__info:last-child {
+          border-bottom: 1px solid #e5e5e5;
+        }
+        #headingOne:before{
+          content: "";
+          display: inline-block;
+          background-image: url(../img/icons.png);
+          background-position: 0 -14px;
+          width: 37px;
+          height: 32px;
+        }
+        #headingTwo:before{
+          content: "";
+          display: inline-block;
+          background-image: url(../img/icons.png);
+          background-position: 0 -46px;
+          width: 37px;
+          height: 32px;
+        }
+        #headingThree:before {
+          content: "";
+          display: inline-block;
+          background-image: url(../img/icons.png);
+          background-position: 0 -82px;
+          width: 37px;
+          height: 32px;
+        }
+    }
+      span.arrow-down{
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        border-top: 2px solid #cccccc;
+        border-right: 2px solid #cccccc;
+        margin-left:auto;
+        transform: rotate(135deg);
+      }
+      span.arrow-up {
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        border-top: 2px solid #cccccc;
+        border-right: 2px solid #cccccc;
+        margin-left:auto;
+        transform: rotate(-45deg);
+      }
+  }
+  }
+}

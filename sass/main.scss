@@ -1,0 +1,29 @@
+.main {
+  .block{
+    &__name, &__description-short, &__description-full {
+      text-align: center;
+    }
+    &__name {
+      @include font('Kaushan Script', 24px, 400, 1, #333333);
+      text-transform: capitalize;
+      margin-top: 110px;
+    }
+    &__description-short {
+      @include font('Montserrat', 30px, 700, 1, #333333);
+      text-transform: uppercase;
+    }
+    &__description-short:after {
+      content:"";
+      display: block;
+      margin: 40px auto;
+      height: 5px;
+      width: 65px;
+      background-color: rgb(243, 129, 129);
+    }
+    &__description-full {
+      @include font('Roboto', 15px, 400, 1, #999999);
+      max-width: 950px;
+      margin: 0 auto 85px;
+    }
+  }
+}
