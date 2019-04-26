@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
-@import url(../fonts/kaushanscript.css);
+@font-face {
+  font-family: 'Kaushan Script';
+  src: local("../fonts/Kaushan Script"), local("../fonts/KaushanScript-Regular"), url("../fonts/Kaushanscript.woff2") format("woff2"), url("../fonts/Kaushanscript.woff") format("woff"), url("../fonts/Kaushanscript.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -16,9 +20,6 @@ body, html {
   font-size: 16px;
   height: 100%;
   overflow-x: hidden; }
-
-header, main, footer, section {
-  display: block; }
 
 input {
   -webkit-appearance: none;
@@ -32,6 +33,43 @@ input {
 a {
   color: inherit;
   cursor: pointer; }
+
+.main .block__name, .main .block__description-short, .main .block__description-full {
+  text-align: center; }
+
+.main .block__name {
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  color: #333333;
+  text-transform: capitalize;
+  margin-top: 110px; }
+
+.main .block__description-short {
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  color: #333333;
+  text-transform: uppercase; }
+
+.main .block__description-short:after {
+  content: "";
+  display: block;
+  margin: 40px auto;
+  height: 5px;
+  width: 65px;
+  background-color: #f38181; }
+
+.main .block__description-full {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+  color: #999999;
+  max-width: 950px;
+  margin: 0 auto 85px; }
 
 .container {
   max-width: 1200px;
@@ -142,43 +180,6 @@ h1 {
     .banner__slider__learn-more:hover, .banner__slider__learn-more:active {
       text-decoration: none;
       color: inherit; }
-
-.main .block__name, .main .block__description-short, .main .block__description-full {
-  text-align: center; }
-
-.main .block__name {
-  font-family: "Kaushan Script";
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1;
-  color: #333333;
-  text-transform: capitalize;
-  margin-top: 110px; }
-
-.main .block__description-short {
-  font-family: "Montserrat";
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1;
-  color: #333333;
-  text-transform: uppercase; }
-
-.main .block__description-short:after {
-  content: "";
-  display: block;
-  margin: 40px auto;
-  height: 5px;
-  width: 65px;
-  background-color: #f38181; }
-
-.main .block__description-full {
-  font-family: "Roboto";
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1;
-  color: #999999;
-  max-width: 950px;
-  margin: 0 auto 85px; }
 
 .service__accordion {
   height: 400px; }
@@ -468,9 +469,7 @@ h1 {
     height: 100%; }
     .service__accordion__items {
       margin-left: 0;
-      margin-top: 10px; } }
-
-@media screen and (max-width: 300px) {
+      margin-top: 10px; }
   .team__items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -484,4 +483,6 @@ h1 {
         -ms-flex-direction: column;
             flex-direction: column; }
     .blog__items__item {
-      width: 100%; } }
+      width: 100%; }
+      .blog__items__item__about__summary {
+        margin-bottom: 30px; } }

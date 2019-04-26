@@ -68,8 +68,6 @@
 
     }
   }
-}
-@media screen and (max-width: 300px) {
   .team__items {
     flex-direction: column;
   }
@@ -77,6 +75,12 @@
     flex-direction: column;
     &__item {
       width: 100%;
+      &__about__summary {
+        margin-bottom: 30px;
+      }
     }
   }
+}
+@media screen and (max-width: 300px) {
+
 }

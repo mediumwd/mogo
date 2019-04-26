@@ -1,143 +1,24 @@
-@import "reset.scss";
-
+// Font Variables
+@mixin font($family, $size, $weight, $line-height, $color){
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+};
 //fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
-@import "../fonts/kaushanscript.css";
-
-
-// Font Variables
-$Roboto: 'Roboto', sans-serif;
-
-@mixin font($family, $size, $weight, $line-height, $color){
-    font-family: $family;
-    font-size: $size;
-    font-weight: $weight;
-    line-height: $line-height;
-    color: $color;
-};
-//var
-
-
-//styles
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
-h1 {
-  font-weight: 700;
-}
-.nav-min {
-  display: none;
-  width: 68px;
-  height: 68px;
-  span {
-    display: flex;
-    width: 40px;
-    height: 6px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 13px auto;
-  }
-  span:nth-child(2){
-    margin: 10px auto;
-  }
-}
-.banner {
-  @include font('Montserrat', 30px, 700, 1, #fff);
-  background-image: url('../img/slider-bg.jpg');
-  .header{
-    padding-top: 30px;
-    .logo {
-      cursor: pointer;
-    }
-    .nav {
-      display: block;
-      font-size: 14px;
-      font-weight: 400;
-      ul {
-        list-style: none;
-        padding-left: 0;
-        margin: 0;
-        margin-right: 10px;
-        li {
-          margin-left: 10px;
-          text-transform: uppercase;
-          a {
-            padding-bottom: 5px;
-          }
-          a:visited {
-            color: inherit;
-          }
-          a:hover,a:active {
-            color: #fce38a;
-            text-decoration: none;
-            border-bottom: 2px solid #fce38a;
-          }
-        }
-      }
-      &__cart, &__search{
-        a:hover,a:active{
-          border-bottom: 0px !important;
-        }
-        svg {
-          fill: #fff;
-          width: 18px;
-          height: 15px;
-        }
-      }
-      &__search svg {
-        height: 18px;
-      }
-    }
-  }
-  &__slider {
-    text-transform: uppercase;
-    text-align: center;
-    .carousel-indicators {
-      li{
-        width: 200px;
-      }
-      li.active{
-        background-color: #f38181;
-      }
-    }
-    &__header-text {
-      @include font('Kaushan Script', 72px, 400, 1, #fff);
-      text-transform: capitalize;
-      display:block;
-      margin: auto;
-      margin-top: 150px;
-    }
-    &__text {
-      @include font('Montserrat', 150px, 700, 140px, #fff);
-      display:block;
-      margin: auto;
-      max-width: 800px;
-    }
-    &__text:after {
-      content:"";
-      display: block;
-      margin: 50px auto;
-      background-color: #fff;
-      width: 65px;
-      height: 5px;
-    }
-    &__learn-more {
-      padding: 15px 30px;
-      border: 2px solid #fff;
-      @include font('Montserrat', 14px, 700, 1, #fff);
-      margin-bottom: 150px;
-    }
-    &__learn-more:hover, &__learn-more:active{
-      text-decoration: none;
-      color: inherit;
-    }
-  }
-}
+@import "../fonts/kaushanscript.scss";
+//scss
+@import "reset.scss";
 @import "main.scss";
 @import "service.scss";
 @import "team.scss";
 @import "blog.scss";
 @import "media.scss";
+
+//styles
+
+
 
