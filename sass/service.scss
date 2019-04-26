@@ -15,7 +15,10 @@
     }
     &-item {
       &__title {
-          @include font('Montserrat', 14px, 400, 1, #333333);
+          font-family: 'Montserrat';
+          font-size: 14px;
+          font-weight: 400;
+          color: #333;
           text-transform: uppercase;
           padding: 20px;
           border: 1px solid #e5e5e5;
@@ -34,6 +37,12 @@
             border: 0;
             resize: none;
             padding-right: 5px;
+            font-family:'Roboto';
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+            color: #999;
+            font-style: italic;
           }
           textarea::-webkit-scrollbar {
             width: 4px;

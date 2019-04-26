@@ -10,11 +10,18 @@
       text-align: center;
     }
     &__name {
-      @include font('Montserrat', 14px, 700, 1, #333333);
+      font-family: 'Montserrat';
+      font-size: 14px;
+      font-weight: 700;
+      color: #333;
       margin-top: 30px;
     }
     &__assignment {
-      @include font('Roboto', 15px, 300, 24px, #999999);
+      font-family: 'Roboto';
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 24px;
+      color: #999;
       font-style: italic;
       display: block;
     }

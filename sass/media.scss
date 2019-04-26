@@ -1,36 +1,36 @@
 @media screen and (max-width: 1200px){
-  .team__items__item__img {
+  .team-item__img {
     width: 300px;
     height: 400px;
   }
 }
 @media screen and (max-width: 992px) {
-  .team__items__item__img {
+  .team-item__img {
     width: 200px;
     height: 280px;
   }
-  .service__accordion__img {
+  .accordion__img {
     min-width: 300px;
   }
-  .banner__slider__header-text {
-    @include font('Kaushan Script', 50px, 400, 10px, #fff);
+  .slider__header {
+    font-size: 50px;
   }
-  .banner__slider__text {
-    @include font('Montserrat', 100px, 700, 140px, #fff);
+  .slider__text {
+    font-size: 100px;
   }
 }
 @media screen and (max-width: 768px) {
-  .team__items__item__img {
+  .team-item__img {
     width: 170px;
     height: 200px;
   }
 }
 @media screen and (max-width: 576px) {
-  .banner__slider__header-text {
-    @include font('Kaushan Script', 20px, 400, 10px, #fff);
+  .slider__header {
+    font-size: 20px;
   }
-  .banner__slider__text {
-    @include font('Montserrat', 40px, 700, 50px, #fff);
+  .slider__text {
+    font-size: 40px;
   }
   .banner .header .nav {
     display: none;
@@ -59,25 +59,25 @@
     z-index: 10;
     opacity: 0.3;
   }
-  .service__accordion {
+  .accordion {
     flex-direction: column;
     height: 100%;
     &__items {
       margin-left: 0;
       margin-top: 10px;
-
     }
   }
   .team__items {
     flex-direction: column;
   }
-  .blog__items {
+  .blog
+    &__items {
     flex-direction: column;
-    &__item {
+  }
+  &-item {
       width: 100%;
       &__about__summary {
         margin-bottom: 30px;
       }
     }
-  }
 }
