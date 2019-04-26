@@ -1,5 +1,5 @@
 .service {
-  &__accordion {
+  .accordion {
     height: 400px;
     &__img {
       min-width: 500px;
@@ -12,8 +12,9 @@
     &__items {
       margin-left: 20px;
       width: 100%;
-      &__item {
-        &__main {
+    }
+    &-item {
+      &__title {
           @include font('Montserrat', 14px, 400, 1, #333333);
           text-transform: uppercase;
           padding: 20px;
@@ -24,7 +25,7 @@
             margin-left: 10px;
           }
         }
-        &__info {
+       &__text {
           padding-left: 10px;
           border-left: 1px solid #e5e5e5;
           border-right: 1px solid #e5e5e5;
@@ -43,38 +44,28 @@
             border-radius: 10px;
           }
         }
-        &__info:last-child {
+        &__text:last-child {
           border-bottom: 1px solid #e5e5e5;
         }
-        #headingOne:before{
-          content: "";
-          display: inline-block;
-          background-image: url(../img/icons.png);
-          background-position: 0 -14px;
-          width: 37px;
-          height: 32px;
-        }
+      &__title:before {
+        content: "";
+        display: inline-block;
+        background-image: url(../img/icons.png);
+        background-position: 0 -14px;
+        width: 37px;
+        height: 32px;
+      }
         #headingTwo:before{
-          content: "";
-          display: inline-block;
-          background-image: url(../img/icons.png);
           background-position: 0 -46px;
-          width: 37px;
-          height: 32px;
         }
         #headingThree:before {
-          content: "";
-          display: inline-block;
-          background-image: url(../img/icons.png);
           background-position: 0 -82px;
-          width: 37px;
-          height: 32px;
         }
     }
   }
-  }
-}
-.service__accordion__items__item__main {
+ }
+
+.accordion-item__title {
   &.collapsed{
     .arrow{
       display: inline-block;
