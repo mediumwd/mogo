@@ -2,13 +2,16 @@
   &__items {
     height: 100%;
   }
+
   &-item {
     height: 100%;
     width: 100%;
+
     &__name, &__assignment {
       text-transform: uppercase;
       text-align: center;
     }
+
     &__name {
       font-family: 'Montserrat';
       font-size: 14px;
@@ -16,6 +19,7 @@
       color: #333;
       margin-top: 30px;
     }
+
     &__assignment {
       font-family: 'Roboto';
       font-size: 15px;
@@ -25,25 +29,110 @@
       font-style: italic;
       display: block;
     }
-    &__img{
+
+    &__img {
       background-color: #95e1d3;
       position: relative;
       width: 350px;
       height: 500px;
       margin: auto;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+        z-index: 3;
+        opacity: 0;
+        transition: all .5s;
+      }
+
       img {
+        position: relative;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
-        position: center center;
+        object-position: center center;
+        z-index: 2;
+        transition: all .5s;
       }
     }
+
+    &__social {
+      display: flex;
+      position: absolute;
+      top: -11px;
+      left: -11px;
+      opacity: 0;
+      transition: opacity 0.7s ease-in;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+
+      &__facebook,
+      &__twiter,
+      &__pinterest,
+      &__instagram {
+        display: flex;
+        padding: 5px;
+        width: 55px;
+        height: 55px;
+        align-items: center;
+        justify-content: center;
+      }
+      &__facebook,
+      &__twiter,
+      &__pinterest {
+        margin: 0 1px;
+        transition: all .4s;
+      }
+    }
+
     &__img:hover {
-      img{
-        position: relative;
+      .team-item__social {
+        opacity: 1;
+        z-index: 4;
+
+        &__facebook,
+        &__twiter,
+        &__pinterest,
+        &__instagram {
+          background-color: #fce38a;
+          svg {
+            fill: rgb(243, 129, 129);
+          }
+        }
+
+        &__facebook:hover,
+        &__twiter:hover,
+        &__pinterest:hover,
+        &__instagram:hover {
+          background-color: #f38181;
+
+          svg {
+            fill: rgb(255, 255, 255);
+          }
+        }
+      }
+
+      img {
         top: -11px;
         left: -11px;
       }
+    }
+
+    &__img:hover:before {
+      top: -11px;
+      left: -11px;
+      opacity: 0.8;
     }
   }
 }

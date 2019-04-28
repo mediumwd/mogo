@@ -1,8 +1,9 @@
 .main {
-  .article-info{
+  .article-info {
     &__title, &__description-short, &__description-full {
       text-align: center;
     }
+
     &__title {
       font-family: 'Kaushan Script';
       font-size: 24px;
@@ -11,6 +12,7 @@
       text-transform: capitalize;
       margin-top: 110px;
     }
+
     &__description-short {
       font-family: 'Montserrat';
       font-size: 30px;
@@ -18,14 +20,16 @@
       color: #333;
       text-transform: uppercase;
     }
+
     &__description-short:after {
-      content:"";
+      content: "";
       display: block;
       margin: 40px auto;
       height: 5px;
       width: 65px;
       background-color: rgb(243, 129, 129);
     }
+
     &__description-full {
       font-family: 'Roboto';
       font-size: 15px;
@@ -36,17 +40,21 @@
     }
   }
 }
+
 .container {
   max-width: 1200px;
   margin: auto;
 }
+
 h1 {
   font-weight: 700;
 }
+
 .nav-min {
   display: none;
   width: 68px;
   height: 68px;
+
   span {
     display: flex;
     width: 40px;
@@ -55,104 +63,125 @@ h1 {
     border-radius: 10px;
     margin: 13px auto;
   }
-  span:nth-child(2){
+
+  span:nth-child(2) {
     margin: 10px auto;
   }
 }
+
 .banner {
   font-family: 'Montserrat';
   font-size: 30px;
   font-weight: 700;
   color: #fff;
   background-image: url('../img/slider-bg.jpg');
-  .header{
+
+  .header {
     padding-top: 30px;
+
     .logo {
       cursor: pointer;
-      a:hover{
+
+      a:hover {
         color: inherit;
         text-decoration: none;
       }
     }
+
     .nav {
       display: block;
       font-size: 14px;
       font-weight: 400;
+
       ul {
         list-style: none;
         padding-left: 0;
         margin: 0;
         margin-right: 10px;
+
         li {
-          margin-left: 10px;
+          margin-left: 50px;
           text-transform: uppercase;
+
           a {
             padding-bottom: 5px;
           }
+
           a:visited {
             color: inherit;
           }
-          a:hover,a:active {
+
+          a:hover, a:active {
             color: #fce38a;
             text-decoration: none;
             border-bottom: 2px solid #fce38a;
           }
         }
       }
-      &__cart, &__search{
-        a:hover,a:active{
+
+      &__cart, &__search {
+        a:hover, a:active {
           border-bottom: 0px !important;
         }
+
         svg {
           fill: #fff;
           width: 18px;
           height: 15px;
         }
       }
+
       &__search svg {
         height: 18px;
       }
     }
   }
+
   .slider {
     text-transform: uppercase;
     text-align: center;
+
     .carousel-indicators {
-      li{
+      li {
         width: 200px;
       }
-      li.active{
+
+      li.active {
         background-color: #f38181;
       }
     }
+
     &__header {
       font-family: 'Kaushan Script';
       font-size: 72px;
       font-weight: 400;
       color: #fff;
       text-transform: capitalize;
-      display:block;
+      display: block;
       margin: auto;
       margin-top: 150px;
     }
+
     &__text {
       font-family: 'Montserrat';
       font-size: 150px;
       font-weight: 700;
       line-height: 140px;
       color: #fff;
-      display:block;
+      display: block;
       margin: auto;
       max-width: 800px;
     }
+
     &__text:after {
-      content:"";
+      content: "";
       display: block;
       margin: 50px auto;
       background-color: #fff;
       width: 65px;
       height: 5px;
     }
+
     &__learn-more {
       padding: 15px 30px;
       border: 2px solid #fff;
@@ -162,7 +191,8 @@ h1 {
       color: #fff;
       margin-bottom: 150px;
     }
-    &__learn-more:hover, &__learn-more:active{
+
+    &__learn-more:hover, &__learn-more:active {
       text-decoration: none;
       color: inherit;
     }
