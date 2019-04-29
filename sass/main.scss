@@ -98,7 +98,7 @@ h1 {
         padding-left: 0;
         margin: 0;
         margin-right: 10px;
-
+        position: relative;
         li {
           margin-left: 50px;
           text-transform: uppercase;
@@ -131,8 +131,39 @@ h1 {
         }
       }
 
-      &__search svg {
-        height: 18px;
+      &__search {
+        #nav__search__input,
+        #nav__search__submit {
+          width: 0;
+          height: 31px;
+          border: 0;
+          transition: all .3s;
+          position: absolute;
+          bottom: -40px;
+          right: 0;
+          z-index: 5;
+          padding: 0;
+        }
+        button {
+          display: block;
+          background: inherit;
+          border: 0;
+        }
+
+        svg {
+          height: 18px;
+        }
+        &.active {
+          #nav__search__input {
+            width: 200px;
+            padding: 5px;
+            right: 70px;
+          }
+          #nav__search__submit {
+            width: 70px;
+            padding: 5px;
+          }
+        }
       }
     }
   }
@@ -169,7 +200,7 @@ h1 {
       line-height: 140px;
       color: #fff;
       display: block;
-      margin: auto;
+      margin: 70px auto 0;
       max-width: 800px;
     }
 
