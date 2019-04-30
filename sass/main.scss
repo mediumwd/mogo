@@ -142,11 +142,10 @@
           position: absolute;
           bottom: -40px;
           right: 0;
-          z-index: 5;
+          z-index: 16;
           padding: 0;
         }
         button {
-          display: block;
           background: inherit;
           border: 0;
           outline: none;
@@ -177,10 +176,12 @@
     text-align: center;
 
     .carousel-indicators {
+      z-index: 3;
       li {
         width: 200px;
         text-indent: 0;
         margin: 30px 10px;
+        z-index: 3;
       }
 
       li.active {
@@ -235,5 +236,26 @@
       color: inherit;
       padding:15px 45px;
     }
+  }
+}
+.close--nav {
+  display: none;
+  span,span:after {
+    display: block;
+    width: 3px;
+    height: 30px;
+    background-color: #fff;
+    margin: auto;
+    transform: rotate(45deg);
+    position: relative;
+  }
+  span:after{
+    content: "";
+    transform: rotate(90deg);
+  }
+}
+.close--nav:hover {
+  span,span:after {
+    background-color: #fce38a;
   }
 }

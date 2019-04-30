@@ -88,30 +88,40 @@
   .banner .header .nav {
     display: none;
     position: absolute;
-    top: 95px;
-    right: 34px;
-    text-align: right;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
     background-color: #000;
-    z-index: 10;
-    opacity: 0.7;
-
+    opacity: 0.9;
+    z-index: 16;
     ul {
       display: flex;
       flex-direction: column;
-
+      z-index: 16;
+      margin-right: 0;
       li {
         margin: 5px;
-        font-size: 10px;
+        font-size: 50px;
+        a {
+          display: block;
+        }
       }
     }
+    .close--nav {
+      display: block;
+    }
+  }
+  .header {
+    position: absolute;
+    background-color: #999;
+    z-index: 15;
+    margin-right: 20px;
   }
   .nav-min {
     display: block;
-    position: absolute;
-    right: 20px;
     background-color: #000;
-    z-index: 10;
+    z-index: 16;
     opacity: 0.3;
   }
-
 }

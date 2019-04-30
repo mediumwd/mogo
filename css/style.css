@@ -152,10 +152,9 @@ a:hover {
         position: absolute;
         bottom: -40px;
         right: 0;
-        z-index: 5;
+        z-index: 16;
         padding: 0; }
       .banner .header .nav__search button {
-        display: block;
         background: inherit;
         border: 0;
         outline: none; }
@@ -173,12 +172,15 @@ a:hover {
   .banner .slider {
     text-transform: uppercase;
     text-align: center; }
-    .banner .slider .carousel-indicators li {
-      width: 200px;
-      text-indent: 0;
-      margin: 30px 10px; }
-    .banner .slider .carousel-indicators li.active {
-      background-color: #f38181; }
+    .banner .slider .carousel-indicators {
+      z-index: 3; }
+      .banner .slider .carousel-indicators li {
+        width: 200px;
+        text-indent: 0;
+        margin: 30px 10px;
+        z-index: 3; }
+      .banner .slider .carousel-indicators li.active {
+        background-color: #f38181; }
     .banner .slider__header {
       font-family: 'Kaushan Script';
       font-size: 72px;
@@ -219,6 +221,27 @@ a:hover {
       text-decoration: none;
       color: inherit;
       padding: 15px 45px; }
+
+.close--nav {
+  display: none; }
+  .close--nav span, .close--nav span:after {
+    display: block;
+    width: 3px;
+    height: 30px;
+    background-color: #fff;
+    margin: auto;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    position: relative; }
+  .close--nav span:after {
+    content: "";
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg); }
+
+.close--nav:hover span, .close--nav:hover span:after {
+  background-color: #fce38a; }
 
 .service .accordion {
   height: 400px; }
@@ -584,12 +607,13 @@ a:hover {
   .banner .header .nav {
     display: none;
     position: absolute;
-    top: 95px;
-    right: 34px;
-    text-align: right;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
     background-color: #000;
-    z-index: 10;
-    opacity: 0.7; }
+    opacity: 0.9;
+    z-index: 16; }
     .banner .header .nav ul {
       display: -webkit-box;
       display: -webkit-flex;
@@ -599,14 +623,23 @@ a:hover {
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      z-index: 16;
+      margin-right: 0; }
       .banner .header .nav ul li {
         margin: 5px;
-        font-size: 10px; }
+        font-size: 50px; }
+        .banner .header .nav ul li a {
+          display: block; }
+    .banner .header .nav .close--nav {
+      display: block; }
+  .header {
+    position: absolute;
+    background-color: #999;
+    z-index: 15;
+    margin-right: 20px; }
   .nav-min {
     display: block;
-    position: absolute;
-    right: 20px;
     background-color: #000;
-    z-index: 10;
+    z-index: 16;
     opacity: 0.3; } }
