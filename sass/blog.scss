@@ -46,6 +46,7 @@
         height: 100%;
         object-fit: cover;
         object-position: center center;
+        transition: all .2s;
       }
     }
 
@@ -101,6 +102,12 @@
           height: 14px;
         }
       }
+    }
+  }
+  &-item:hover {
+    img {
+      opacity: 0.9;
+      padding: 2px;
     }
   }
 }
