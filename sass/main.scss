@@ -75,6 +75,8 @@ h1 {
   font-weight: 700;
   color: #fff;
   background-image: url('../img/slider-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .header {
     padding-top: 30px;
@@ -149,7 +151,9 @@ h1 {
           background: inherit;
           border: 0;
         }
-
+        button:focus {
+          border: 0;
+        }
         svg {
           height: 18px;
         }
@@ -175,6 +179,8 @@ h1 {
     .carousel-indicators {
       li {
         width: 200px;
+        text-indent: 0;
+        margin: 30px 10px;
       }
 
       li.active {
@@ -200,7 +206,7 @@ h1 {
       line-height: 140px;
       color: #fff;
       display: block;
-      margin: 70px auto 0;
+      margin: 60px auto 0;
       max-width: 800px;
     }
 
@@ -220,7 +226,7 @@ h1 {
       font-size: 14px;
       font-weight: 700;
       color: #fff;
-      margin-bottom: 150px;
+      margin-bottom: 220px;
     }
 
     &__learn-more:hover, &__learn-more:active {
