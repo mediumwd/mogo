@@ -72,6 +72,9 @@
       }
     }
   }
+  .banner .slider .carousel-indicators {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -90,7 +93,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     text-align: center;
     background-color: #000;
     opacity: 0.9;
@@ -100,6 +103,7 @@
       flex-direction: column;
       z-index: 16;
       margin-right: 0;
+      height: 100vh;
       li {
         margin: 5px;
         font-size: 50px;
@@ -111,9 +115,20 @@
     .close--nav {
       display: block;
     }
+    .nav__search {
+      display: none;
+    }
+    .search-mobile {
+      display: block;
+      margin: 30px;
+      input {
+        padding: 10px;
+      }
+    }
   }
   .header {
     position: absolute;
+    padding-bottom: 30px;
     background-color: #999;
     z-index: 15;
     margin-right: 20px;

@@ -243,6 +243,9 @@ a:hover {
 .close--nav:hover span, .close--nav:hover span:after {
   background-color: #fce38a; }
 
+.search-mobile {
+  display: none; }
+
 .service .accordion {
   height: 400px; }
   .service .accordion__img {
@@ -596,7 +599,9 @@ a:hover {
   .blog-item {
     width: 100%; }
     .blog-item__about__summary {
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+  .banner .slider .carousel-indicators {
+    font-size: 20px; } }
 
 @media screen and (max-width: 576px) {
   .banner .slider__header {
@@ -609,7 +614,7 @@ a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     text-align: center;
     background-color: #000;
     opacity: 0.9;
@@ -625,7 +630,8 @@ a:hover {
           -ms-flex-direction: column;
               flex-direction: column;
       z-index: 16;
-      margin-right: 0; }
+      margin-right: 0;
+      height: 100vh; }
       .banner .header .nav ul li {
         margin: 5px;
         font-size: 50px; }
@@ -633,8 +639,16 @@ a:hover {
           display: block; }
     .banner .header .nav .close--nav {
       display: block; }
+    .banner .header .nav .nav__search {
+      display: none; }
+    .banner .header .nav .search-mobile {
+      display: block;
+      margin: 30px; }
+      .banner .header .nav .search-mobile input {
+        padding: 10px; }
   .header {
     position: absolute;
+    padding-bottom: 30px;
     background-color: #999;
     z-index: 15;
     margin-right: 20px; }
