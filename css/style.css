@@ -329,8 +329,7 @@ a:hover {
   height: 100%; }
 
 .team-item {
-  height: 100%;
-  width: 100%; }
+  height: 100%; }
   .team-item__name, .team-item__assignment {
     text-transform: uppercase;
     text-align: center; }
@@ -449,12 +448,14 @@ a:hover {
     opacity: 0.8; }
 
 .blog__items {
-  text-align: center; }
+  text-align: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .blog-item {
-  width: 350px;
-  padding: 0 10px;
-  margin: 0 auto 20px; }
+  width: 350px; }
   .blog-item__img {
     width: 100%;
     height: 240px;
@@ -542,7 +543,7 @@ a:hover {
 .footer .footer__col-heading {
   text-transform: uppercase; }
 
-.footer .blog-item__img img {
+.footer .blogs__img-holder img {
   width: 100%;
   height: auto; }
 
@@ -550,6 +551,47 @@ a:hover {
   padding: 2px;
   width: 100%;
   height: auto; }
+
+.footer h1 {
+  font-family: 'Montserrat';
+  font-size: 46px;
+  font-weight: 700;
+  color: #cccccc; }
+
+.footer h4 {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #999999;
+  line-height: 24px; }
+
+.footer h5 {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  color: #333333; }
+  .footer h5 span {
+    font-size: 18px;
+    font-weight: 700; }
+
+.footer h6, .footer input {
+  font-family: 'Roboto';
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 300;
+  font-style: italic; }
+
+.footer .subscribe__email {
+  padding-left: 5px; }
+
+.footer .subscribe__button {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  font-style: normal;
+  background-color: #95e1d3;
+  border: none;
+  outline: none; }
 
 @media screen and (max-width: 1200px) {
   .team-item__img {

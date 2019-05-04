@@ -2,14 +2,13 @@
   .footer__col-heading {
     text-transform: uppercase;
   }
-  .blog-item__img {
+  .blogs__img-holder {
     img {
       width: 100%;
       height: auto;
     }
   }
   .insta-photo {
-
     img {
       padding: 2px;
       width: 100%;
@@ -19,5 +18,47 @@
     }
   }
   .footer__view-more {
+  }
+  h1 {
+    font-family: 'Montserrat';
+    font-size: 46px;
+    font-weight: 700;
+    color: #cccccc;
+  }
+  h4 {
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #999999;
+    line-height: 24px;
+  }
+  h5 {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #333333;
+    span{
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+  h6, input {
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .subscribe__email {
+    padding-left: 5px;
+  }
+  .subscribe__button {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    font-style: normal;
+    background-color: #95e1d3;
+    border: none;
+    outline: none;
   }
 }
