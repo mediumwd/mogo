@@ -1,0 +1,24 @@
+.footer {
+  .footer__col-heading {
+    text-transform: uppercase;
+  }
+  .blog-item__img {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .insta-photo {
+    height: 88px;
+    width: 88px;
+    img {
+      padding: 2px;
+      width: 100%;
+      height: auto;
+    }
+    &__holder {
+    }
+  }
+  .footer__view-more {
+  }
+}

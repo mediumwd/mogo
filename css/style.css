@@ -539,6 +539,21 @@ a:hover {
   opacity: 0.9;
   padding: 2px; }
 
+.footer .footer__col-heading {
+  text-transform: uppercase; }
+
+.footer .blog-item__img img {
+  width: 100%;
+  height: auto; }
+
+.footer .insta-photo {
+  height: 88px;
+  width: 88px; }
+  .footer .insta-photo img {
+    padding: 2px;
+    width: 100%;
+    height: auto; }
+
 @media screen and (max-width: 1200px) {
   .team-item__img {
     width: 300px;
