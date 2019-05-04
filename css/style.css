@@ -546,13 +546,10 @@ a:hover {
   width: 100%;
   height: auto; }
 
-.footer .insta-photo {
-  height: 88px;
-  width: 88px; }
-  .footer .insta-photo img {
-    padding: 2px;
-    width: 100%;
-    height: auto; }
+.footer .insta-photo img {
+  padding: 2px;
+  width: 100%;
+  height: auto; }
 
 @media screen and (max-width: 1200px) {
   .team-item__img {
