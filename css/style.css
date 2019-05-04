@@ -512,26 +512,27 @@ a:hover {
     height: 1px;
     display: block;
     margin: 25px 0; }
-  .blog-item__about__summary {
+  .blog-item__about__info {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    font-family: 'Roboto';
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 24px;
-    color: #999;
     text-align: left;
     font-style: italic; }
-    .blog-item__about__summary .views:before, .blog-item__about__summary .comments:before {
+    .blog-item__about__info h4, .blog-item__about__info h5 {
+      font-family: 'Roboto';
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 24px;
+      color: #999; }
+    .blog-item__about__info .views:before, .blog-item__about__info .comments:before {
       content: "";
       display: inline-block;
       margin: 0 3px 0 10px;
       background-image: url(../img/icons.png);
       width: 20px;
       height: 14px; }
-    .blog-item__about__summary .comments:before {
+    .blog-item__about__info .comments:before {
       background-position: -20px 0;
       width: 17px;
       height: 14px; }
@@ -540,58 +541,88 @@ a:hover {
   opacity: 0.9;
   padding: 2px; }
 
-.footer .footer__col-heading {
-  text-transform: uppercase; }
-
-.footer .blogs__img-holder img {
-  width: 100%;
-  height: auto; }
-
-.footer .insta-photo img {
-  padding: 2px;
-  width: 100%;
-  height: auto; }
-
-.footer h1 {
-  font-family: 'Montserrat';
-  font-size: 46px;
-  font-weight: 700;
-  color: #cccccc; }
-
-.footer h4 {
-  font-family: 'Roboto';
-  font-size: 15px;
-  color: #999999;
-  line-height: 24px; }
-
-.footer h5 {
-  font-family: 'Montserrat';
-  font-size: 14px;
-  color: #333333; }
-  .footer h5 span {
-    font-size: 18px;
-    font-weight: 700; }
-
-.footer h6, .footer input {
-  font-family: 'Roboto';
-  font-size: 15px;
-  line-height: 24px;
-  color: #999999;
-  font-weight: 300;
-  font-style: italic; }
-
-.footer .subscribe__email {
-  padding-left: 5px; }
-
-.footer .subscribe__button {
-  font-family: 'Montserrat';
-  font-size: 14px;
-  font-weight: 700;
-  color: #ffffff;
-  font-style: normal;
-  background-color: #95e1d3;
-  border: none;
-  outline: none; }
+.footer {
+  padding-top: 50px; }
+  .footer__col-heading {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase; }
+  .footer .blogs__img-holder img {
+    width: 100%;
+    height: auto;
+    padding-right: 10px;
+    padding-top: 5px; }
+  .footer__col-heading {
+    padding-top: 25px; }
+  .footer .insta-photo img {
+    padding: 2px;
+    width: 100%;
+    height: auto; }
+  .footer h1 {
+    font-family: 'Montserrat';
+    font-size: 46px;
+    font-weight: 700;
+    color: #cccccc; }
+  .footer h4 {
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #999999;
+    line-height: 24px; }
+  .footer h5 {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #333333; }
+    .footer h5 span {
+      font-size: 18px;
+      font-weight: 700; }
+  .footer h6 {
+    text-transform: capitalize; }
+  .footer h6, .footer input {
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    font-weight: 300;
+    font-style: italic;
+    outline: none; }
+  .footer .follow-us svg {
+    fill: #95e1d3;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s; }
+  .footer .follow-us svg:hover {
+    fill: #f38181; }
+  .footer .subscribe__email {
+    padding-left: 5px;
+    border: 1px solid #999; }
+  .footer .subscribe__button {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    font-style: normal;
+    background-color: #95e1d3;
+    outline-style: none;
+    border: none;
+    padding: 15px 44px;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
+  .footer .subscribe__button:hover {
+    padding: 15px 55px; }
+  .footer .copyrights {
+    padding-top: 15px;
+    margin: 15px 15px 0;
+    border-top: 1px solid #e5e5e5; }
+    .footer .copyrights a {
+      color: #f38181; }
+    .footer .copyrights h4 {
+      font-family: 'Montserrat';
+      font-size: 14px;
+      font-weight: 400;
+      color: #333333;
+      text-align: center; }
 
 @media screen and (max-width: 1200px) {
   .team-item__img {

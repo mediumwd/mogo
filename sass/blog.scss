@@ -76,15 +76,18 @@
         margin: 25px 0;
       }
 
-      &__summary {
+      &__info {
         display: flex;
-        font-family: 'Roboto';
-        font-size: 15px;
-        font-weight: 300;
-        line-height: 24px;
-        color: #999;
         text-align: left;
         font-style: italic;
+
+        h4, h5 {
+          font-family: 'Roboto';
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 24px;
+          color: #999;
+        }
 
         .views:before, .comments:before {
           content: "";

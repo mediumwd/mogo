@@ -1,12 +1,21 @@
 .footer {
-  .footer__col-heading {
+  padding-top: 50px;
+  &__col-heading {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #333;
     text-transform: uppercase;
   }
   .blogs__img-holder {
     img {
       width: 100%;
       height: auto;
+      padding-right: 10px;
+      padding-top: 5px;
     }
+  }
+  &__col-heading {
+    padding-top: 25px;
   }
   .insta-photo {
     img {
@@ -16,8 +25,6 @@
     }
     &__holder {
     }
-  }
-  .footer__view-more {
   }
   h1 {
     font-family: 'Montserrat';
@@ -40,6 +47,9 @@
       font-weight: 700;
     }
   }
+  h6 {
+    text-transform: capitalize;
+  }
   h6, input {
     font-family: 'Roboto';
     font-size: 15px;
@@ -47,9 +57,20 @@
     color: #999999;
     font-weight: 300;
     font-style: italic;
+    outline: none;
+  }
+  .follow-us {
+    svg {
+      fill: #95e1d3;
+      transition: all .2s;
+    }
+    svg:hover {
+      fill: #f38181;
+    }
   }
   .subscribe__email {
     padding-left: 5px;
+    border: 1px solid #999;
   }
   .subscribe__button {
     font-family: 'Montserrat';
@@ -58,7 +79,27 @@
     color: #ffffff;
     font-style: normal;
     background-color: #95e1d3;
+    outline-style: none;
     border: none;
-    outline: none;
+    padding: 15px 44px;
+    transition: all .5s;
+  }
+  .subscribe__button:hover {
+    padding: 15px 55px;
+  }
+  .copyrights {
+    padding-top: 15px;
+    margin: 15px 15px 0;
+    border-top: 1px solid #e5e5e5;
+    a {
+      color: #f38181;
+    }
+    h4 {
+      font-family: 'Montserrat';
+      font-size: 14px;
+      font-weight: 400;
+      color: #333333;
+      text-align: center;
+    }
   }
 }
