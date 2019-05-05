@@ -133,8 +133,21 @@ a:hover {
             color: inherit; }
           .banner .header .nav ul li a:hover, .banner .header .nav ul li a:active {
             color: #fce38a;
-            text-decoration: none;
-            border-bottom: 2px solid #fce38a; }
+            text-decoration: none; }
+          .banner .header .nav ul li a:after {
+            display: block;
+            content: '';
+            border-bottom: 2px solid #fce38a;
+            -webkit-transform: scaleX(0);
+                -ms-transform: scaleX(0);
+                    transform: scaleX(0);
+            -webkit-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out; }
+          .banner .header .nav ul li a:hover:after {
+            -webkit-transform: scaleX(1);
+                -ms-transform: scaleX(1);
+                    transform: scaleX(1); }
       .banner .header .nav__cart a:hover svg, .banner .header .nav__cart a:active svg, .banner .header .nav__cart button:hover svg, .banner .header .nav__search a:hover svg, .banner .header .nav__search a:active svg, .banner .header .nav__search button:hover svg {
         fill: #fce38a; }
       .banner .header .nav__cart svg, .banner .header .nav__search svg {
@@ -270,7 +283,10 @@ a:hover {
   .service .accordion-item__text {
     padding-left: 10px;
     border-left: 1px solid #e5e5e5;
-    border-right: 1px solid #e5e5e5; }
+    border-right: 1px solid #e5e5e5;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
     .service .accordion-item__text textarea {
       width: 100%;
       border: 0;
@@ -489,9 +505,11 @@ a:hover {
          object-fit: cover;
       -o-object-position: center center;
          object-position: center center;
-      -webkit-transition: all .2s;
-      -o-transition: all .2s;
-      transition: all .2s; }
+      -webkit-transition: -webkit-transform .2s;
+      transition: -webkit-transform .2s;
+      -o-transition: transform .2s;
+      transition: transform .2s;
+      transition: transform .2s, -webkit-transform .2s; }
   .blog-item__about__title {
     font-family: 'Montserrat';
     font-size: 14px;
@@ -537,30 +555,21 @@ a:hover {
       width: 17px;
       height: 14px; }
 
-.blog-item:hover img {
-  opacity: 0.9;
-  padding: 2px; }
+.blog-item:hover {
+  overflow: hidden; }
+  .blog-item:hover img {
+    opacity: 0.9;
+    -webkit-transform: scaleX(1.1);
+        -ms-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+    -webkit-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s; }
 
 .footer {
+  font-family: 'Montserrat';
   padding-top: 50px; }
-  .footer__col-heading {
-    font-family: 'Montserrat';
-    font-size: 14px;
-    color: #333;
-    text-transform: uppercase; }
-  .footer .blogs__img-holder img {
-    width: 100%;
-    height: auto;
-    padding-right: 10px;
-    padding-top: 5px; }
-  .footer__col-heading {
-    padding-top: 25px; }
-  .footer .insta-photo img {
-    padding: 2px;
-    width: 100%;
-    height: auto; }
   .footer h1 {
-    font-family: 'Montserrat';
     font-size: 46px;
     font-weight: 700;
     color: #cccccc; }
@@ -570,7 +579,6 @@ a:hover {
     color: #999999;
     line-height: 24px; }
   .footer h5 {
-    font-family: 'Montserrat';
     font-size: 14px;
     color: #333333; }
     .footer h5 span {
@@ -579,25 +587,59 @@ a:hover {
   .footer h6 {
     text-transform: capitalize; }
   .footer h6, .footer input {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-size: 15px;
     line-height: 24px;
     color: #999999;
     font-weight: 300;
     font-style: italic;
     outline: none; }
+  .footer__col-heading {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    text-transform: uppercase;
+    padding-top: 25px;
+    margin-bottom: 40px; }
+  .footer .f-blog-item {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333; }
+    .footer .f-blog-item h5 {
+      font-family: 'Roboto';
+      font-size: 13px;
+      line-height: 24px;
+      color: #999999;
+      font-style: italic; }
+    .footer .f-blog-item .f-blog__img-holder img {
+      width: 100%;
+      height: auto;
+      padding-right: 10px;
+      padding-top: 5px;
+      margin-bottom: 30px; }
+  .footer .insta-photo img {
+    padding: 2px;
+    width: 100%;
+    height: auto; }
+  .footer .follow-us a {
+    padding: 5px 0; }
   .footer .follow-us svg {
     fill: #95e1d3;
     -webkit-transition: all .2s;
     -o-transition: all .2s;
-    transition: all .2s; }
-  .footer .follow-us svg:hover {
+    transition: all .2s;
+    margin: 0 9px; }
+  .footer .follow-us a:hover svg {
     fill: #f38181; }
+  .footer .subscribe__button, .footer .subscribe__email {
+    height: 40px; }
   .footer .subscribe__email {
     padding-left: 5px;
-    border: 1px solid #999; }
+    border: 1px solid #999;
+    width: 300px; }
   .footer .subscribe__button {
-    font-family: 'Montserrat';
     font-size: 14px;
     font-weight: 700;
     color: #ffffff;
@@ -605,12 +647,24 @@ a:hover {
     background-color: #95e1d3;
     outline-style: none;
     border: none;
-    padding: 15px 44px;
+    padding: 0 44px;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s; }
   .footer .subscribe__button:hover {
-    padding: 15px 55px; }
+    padding: 0 55px; }
+  .footer .footer__view-more {
+    font-face: 'Roboto';
+    font-size: 13px;
+    font-style: italic;
+    color: #999;
+    line-height: 24px;
+    font-weight: 300;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+  .footer .footer__view-more:hover {
+    color: #f38181; }
   .footer .copyrights {
     padding-top: 15px;
     margin: 15px 15px 0;
@@ -618,16 +672,24 @@ a:hover {
     .footer .copyrights a {
       color: #f38181; }
     .footer .copyrights h4 {
-      font-family: 'Montserrat';
       font-size: 14px;
       font-weight: 400;
       color: #333333;
       text-align: center; }
+  .footer .underline {
+    border-bottom: 1px solid #E5E5E5; }
+  .footer .footer__blog {
+    padding: 0 30px; }
 
 @media screen and (max-width: 1200px) {
   .team-item__img {
     width: 300px;
-    height: 400px; } }
+    height: 400px; }
+  .footer .follow-us a {
+    display: inline-block;
+    margin: 15px; }
+  .footer .footer__blog {
+    padding: 0; } }
 
 @media screen and (max-width: 992px) {
   .banner .header .nav ul li {
@@ -744,4 +806,9 @@ a:hover {
     display: block;
     background-color: #000;
     z-index: 16;
-    opacity: 0.3; } }
+    opacity: 0.3; }
+  .footer .subscribe__email, .footer .subscribe__button {
+    display: block;
+    width: 100%; }
+  .footer .subscribe__email {
+    height: 54px; } }

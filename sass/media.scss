@@ -3,6 +3,14 @@
     width: 300px;
     height: 400px;
   }
+  .footer .follow-us a{
+    display: inline-block;
+    margin: 15px;
+  }
+  .footer .footer__blog {
+    padding: 0;
+  }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -148,4 +156,14 @@
     z-index: 16;
     opacity: 0.3;
   }
+  .footer {
+    .subscribe__email, .subscribe__button {
+      display: block;
+      width: 100%;
+    }
+    .subscribe__email {
+      height: 54px;
+    }
+  }
+
 }
