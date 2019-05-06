@@ -702,7 +702,7 @@ a:hover {
   .footer .underline {
     border-bottom: 1px solid #E5E5E5; }
   .footer .footer__blog {
-    padding-bottom: 50px; }
+    padding: 0 30px 0; }
 
 @media screen and (max-width: 1200px) {
   .team-item__img {
