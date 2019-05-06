@@ -109,7 +109,8 @@
 
   .subscribe__email {
     padding-left: 5px;
-    border: 1px solid #999;
+    border: 1px solid #E7E7E7;
+    border-right: transparent;
     width: 300px;
   }
 
@@ -123,10 +124,12 @@
     border: none;
     padding: 0 44px;
     transition: all .5s;
+    font-family: 'Montserrat';
+    font-weight: 700;
   }
 
   .subscribe__button:hover {
-    padding: 0 55px;
+    color: #e5e5e5;
   }
 
   .footer__view-more {
@@ -150,6 +153,10 @@
 
     a {
       color: #f38181;
+      transition: all .2s;
+    }
+    a:hover {
+      color: #95e1d3;
     }
 
     h4 {
@@ -165,6 +172,6 @@
   }
 
   .footer__blog {
-    padding: 0 30px;
+    padding-bottom: 50px;
   }
 }

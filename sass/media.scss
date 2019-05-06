@@ -119,9 +119,11 @@
         a {
           display: block;
         }
-        a:hover, a:active {
+        a:hover, a:active a:hover:after, a:after {
           color: inherit;
           border:none;
+        }
+        a:hover {
           svg{
             fill: #fff;
           }

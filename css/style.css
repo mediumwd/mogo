@@ -167,6 +167,15 @@ a:hover {
         right: 0;
         z-index: 16;
         padding: 0; }
+      .banner .header .nav__search #nav__search__input {
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: 300; }
+      .banner .header .nav__search #nav__search__submit {
+        background-color: #95e1d3;
+        color: #fff;
+        font-family: 'Montserrat';
+        font-weight: 700; }
       .banner .header .nav__search button {
         background: inherit;
         border: 0;
@@ -178,10 +187,14 @@ a:hover {
       .banner .header .nav__search.active #nav__search__input {
         width: 200px;
         padding: 5px;
-        right: 70px; }
+        right: 70px;
+        border: 1px solid #E7E7E7;
+        border-right: transparent; }
       .banner .header .nav__search.active #nav__search__submit {
         width: 70px;
         padding: 5px; }
+      .banner .header .nav__search.active #nav__search__submit:hover {
+        color: #E5E5E5; }
   .banner .slider {
     text-transform: uppercase;
     text-align: center; }
@@ -233,7 +246,9 @@ a:hover {
     .banner .slider__learn-more:hover, .banner .slider__learn-more:active {
       text-decoration: none;
       color: inherit;
-      padding: 15px 45px; }
+      padding: 15px 45px;
+      background-color: #fff;
+      color: #f38181; }
 
 .close--nav {
   display: none; }
@@ -472,10 +487,14 @@ a:hover {
 
 .blog-item {
   width: 350px; }
+  .blog-item__img:nth-child(2) {
+    margin: 0 20px; }
   .blog-item__img {
     width: 100%;
     height: 240px;
-    position: relative; }
+    position: relative;
+    overflow: hidden;
+    padding: 10px; }
     .blog-item__img .date-info {
       position: relative;
       width: 60px;
@@ -555,16 +574,12 @@ a:hover {
       width: 17px;
       height: 14px; }
 
-.blog-item:hover {
-  overflow: hidden; }
-  .blog-item:hover img {
-    opacity: 0.9;
-    -webkit-transform: scaleX(1.1);
-        -ms-transform: scaleX(1.1);
-            transform: scaleX(1.1);
-    -webkit-transition: all 0s;
-    -o-transition: all 0s;
-    transition: all 0s; }
+.blog-item:hover img {
+  opacity: 0.9;
+  overflow: hidden;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); }
 
 .footer {
   font-family: 'Montserrat';
@@ -637,7 +652,8 @@ a:hover {
     height: 40px; }
   .footer .subscribe__email {
     padding-left: 5px;
-    border: 1px solid #999;
+    border: 1px solid #E7E7E7;
+    border-right: transparent;
     width: 300px; }
   .footer .subscribe__button {
     font-size: 14px;
@@ -650,9 +666,11 @@ a:hover {
     padding: 0 44px;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
-    transition: all .5s; }
+    transition: all .5s;
+    font-family: 'Montserrat';
+    font-weight: 700; }
   .footer .subscribe__button:hover {
-    padding: 0 55px; }
+    color: #e5e5e5; }
   .footer .footer__view-more {
     font-face: 'Roboto';
     font-size: 13px;
@@ -670,7 +688,12 @@ a:hover {
     margin: 15px 15px 0;
     border-top: 1px solid #e5e5e5; }
     .footer .copyrights a {
-      color: #f38181; }
+      color: #f38181;
+      -webkit-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s; }
+    .footer .copyrights a:hover {
+      color: #95e1d3; }
     .footer .copyrights h4 {
       font-size: 14px;
       font-weight: 400;
@@ -679,7 +702,7 @@ a:hover {
   .footer .underline {
     border-bottom: 1px solid #E5E5E5; }
   .footer .footer__blog {
-    padding: 0 30px; }
+    padding-bottom: 50px; }
 
 @media screen and (max-width: 1200px) {
   .team-item__img {
@@ -782,11 +805,11 @@ a:hover {
         font-size: 30px; }
         .banner .header .nav ul li a {
           display: block; }
-        .banner .header .nav ul li a:hover, .banner .header .nav ul li a:active {
+        .banner .header .nav ul li a:hover, .banner .header .nav ul li a:active a:hover:after, .banner .header .nav ul li a:after {
           color: inherit;
           border: none; }
-          .banner .header .nav ul li a:hover svg, .banner .header .nav ul li a:active svg {
-            fill: #fff; }
+        .banner .header .nav ul li a:hover svg {
+          fill: #fff; }
     .banner .header .nav .close--nav {
       display: block; }
     .banner .header .nav .nav__search {

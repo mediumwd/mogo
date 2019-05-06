@@ -156,6 +156,17 @@
           z-index: 16;
           padding: 0;
         }
+        #nav__search__input {
+          font-family: 'Roboto';
+          font-style: italic;
+          font-weight: 300;
+        }
+        #nav__search__submit {
+          background-color: #95e1d3;
+          color: #fff;
+          font-family: 'Montserrat';
+          font-weight: 700;
+        }
         button {
           background: inherit;
           border: 0;
@@ -172,10 +183,15 @@
             width: 200px;
             padding: 5px;
             right: 70px;
+            border: 1px solid #E7E7E7;
+            border-right: transparent;
           }
           #nav__search__submit {
             width: 70px;
             padding: 5px;
+          }
+          #nav__search__submit:hover {
+            color: #E5E5E5;
           }
         }
       }
@@ -246,6 +262,8 @@
       text-decoration: none;
       color: inherit;
       padding:15px 45px;
+      background-color: #fff;
+      color: #f38181;
     }
   }
 }
