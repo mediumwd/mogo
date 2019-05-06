@@ -54,12 +54,14 @@
     font-size: 12px;
     line-height: 18px;
     color: #333333;
+
     h5 {
       font-family: 'Roboto';
       font-size: 13px;
       line-height: 24px;
       color: #999999;
       font-style: italic;
+      margin: 0;
     }
     .f-blog__img-holder {
       img {
@@ -68,7 +70,18 @@
         padding-right: 10px;
         padding-top: 5px;
         margin-bottom: 30px;
+        transition: all .5s ease;
       }
+    }
+    .f-blog__img-holder:last-child {
+      img {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .f-blog-item:hover {
+    img {
+      transform: scale(1.1);
     }
   }
 
@@ -78,12 +91,17 @@
       padding: 2px;
       width: 100%;
       height: auto;
+      transition: all .2s ease;
     }
 
     &__holder {
     }
   }
-
+  .insta-photo:hover {
+    img {
+    transform: scale(1.05);
+    }
+  }
 
   .follow-us {
     a {
